@@ -1,0 +1,30 @@
+{
+  "name": "contacts",
+  "version": "1.0.0",
+  "description": "A simple contact management application",
+  "keywords": [
+    "contacts",
+    "management",
+    "nodejs"
+  ],
+  "license": "ISC",
+  "author": "Alban Sellier <alban.sellier@etu-upsaclay.fr>",
+  "contributors": [
+    "Alban Sellier <alban.sellier@etu-upsaclay.fr>"
+  ],
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "type": "commonjs",
+  "main": "contacts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "lodash": "^4.17.21",
+    "yargs": "^17.7.2"
+  }
+}

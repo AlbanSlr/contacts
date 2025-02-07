@@ -1,5 +1,6 @@
 const yargs = require('yargs');
 const ContactService = require('./ContactService');
+const server = require('./Server');
 
 module.exports = (fileContactService) => {
     yargs
@@ -64,6 +65,9 @@ module.exports = (fileContactService) => {
             fileContactService.watch((differences) => {
                 console.log('Changes detected:', differences);
             });
+        })
+        .command('serve', 'Start a web server to list contacts', {}, () => {
+            server(fileContactService);
         })
         .help()
         .argv;
